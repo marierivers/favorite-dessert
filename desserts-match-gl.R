@@ -23,7 +23,11 @@ favorite_desserts <- read_csv("favorite_desserts.csv") %>%
   mutate(dessert = tolower(dessert))
 
 
+<<<<<<< HEAD
 is_iconic <- left_join(favorite_desserts, dessert_listing, by = "dessert") # marie changed semi-join to left join
+=======
+is_iconic <- right_join(favorite_desserts, dessert_listing, by = "dessert") #changed semi_join to right_join -- Grace 
+>>>>>>> 08cc0ed294e31a03cfdf6582cfcb375b996613f2
 
 # Returns the data frame with the names and desserts that match the iconic desserts.
 is_iconic
