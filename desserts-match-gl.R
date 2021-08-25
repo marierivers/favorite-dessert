@@ -26,4 +26,6 @@ favorite_desserts <- read_csv("favorite_desserts.csv") %>%
 is_iconic <- right_join(favorite_desserts, dessert_listing, by = "dessert") #changed semi_join to right_join -- Grace 
 
 # Returns the data frame with the names and desserts that match the iconic desserts.
+print("These are the deserts you entered that are iconic American desserts") # added message -- GL
 is_iconic
+
